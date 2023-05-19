@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+
+:root{
+    --color-red : red;
+    --color-white : white;
+    --color-yellow : yellow;
+    --color-primary: #f6d200;
+    --color-secondary: #ededed;
+    --color-dark : black;
+}
+
+.heading{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 360px;
+}
+.heading .head{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--color-white);
+
+}
+.desc{
+    padding-top: 20px;
+    color : var(--color-yellow);
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+}
+.headers{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: var(--color-yellow);
+}
+
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.navbar li{
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    padding: 15px;
+
+}
+.navbar li:hover,li:hover>a{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.content-area{
+    background-color: var(--color-secondary);
+    display: flex;
+    width: 100%;
+    height: auto;
+
+}
+.main-content-area{
+    flex-basis: 70%;
+    border : 2px solid red;
+}
+.aside-area{
+    flex-basis: 30%;
+    border : 2px solid red;
+}
+
+
